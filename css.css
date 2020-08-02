@@ -131,9 +131,59 @@ p {
 }
 
 #projects {
+  margin-top: 20px;
   color: White;
   font-size: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  #projects{
+    margin-top: 300px;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  #projects{
+    margin-top: 150px;
+  }
+  
+  div.projects-respo1{
+    width: 300%;
+  }
+}
+
+div.projects-respo1{
+	margin-top: 30px;
+ 	padding: 0 3px;
+  float: left;
+  width: 24.99999%;
+  float:left;
+  width:100%;
+}
+
+div.projects-img1 img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  div.projects-respo1 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width: 900px) {
+  p#story{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.projects-respo1 {
+    width: 100%;
+  }
 }
 
 div.projects-respo{
@@ -204,10 +254,14 @@ div.projects-img img {
   max-width: 100%;
   height: auto;
 }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-  .modal-content {
+  div.column {
     width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -223,35 +277,16 @@ i {
   height: 600px; /* Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+
 
 #story {
   max-width: 100%;
   height: auto;
   }
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
