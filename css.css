@@ -35,7 +35,7 @@ body {
 #navbar a {
   float: left;
   display: block;
-  color: #B66B5B;
+  color: #4c71f2;
   text-align: center;
   padding: 17px 25px;
   text-decoration: none;
@@ -44,7 +44,7 @@ body {
 
 #navbar a:hover {
   background-color: white;
-  color: black;
+  color:#4c71f2;
 }
 
 #navbar a.active {
@@ -56,20 +56,6 @@ img {
     display: block;
 }
 
-.content {          
-  padding: 0px;
-  background-color: #071a20;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
 
 .topnav-right {
   float: right;
@@ -78,18 +64,6 @@ img {
 #logo-container img {
    width: 100%;
    height: auto;
-}
-
-.cntrdtxt {
-  position:  absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Lobster', cursive;
-  font-size: 70px;
-  color: white;
-  border: 3px solid white;
-  padding: 20px;
 }
 
 footer {
@@ -121,33 +95,10 @@ p {
 #ftr {
   text-align: left;
   padding: 17px 25px;
-  color: #B66B5B;
-}
-
-#aboutme {
-  color: White;
-  font-size: 30px;
-  text-align: center;
-}
-
-#projects {
-  margin-top: 20px;
-  color: White;
-  font-size: 30px;
-  text-align: center;
-}
-
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  #projects{
-    margin-top: 300px;
-  }
+  color: #4c71f2;
 }
 
 @media screen and (min-width: 710px) {
-  #projects{
-    margin-top: 150px;
-  }
-  
   div.projects-respo1{
     width: 300%;
   }
@@ -167,25 +118,6 @@ div.projects-img1 img {
   height: auto;
 }
 
-@media only screen and (max-width: 700px) {
-  div.projects-respo1 {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (min-width:300px) and (max-width: 900px) {
-  p#story{
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  div.projects-respo1 {
-    width: 100%;
-  }
-}
-
 div.projects-respo{
 	margin-top: 30px;
  	padding: 0 3px;
@@ -199,6 +131,10 @@ div.projects-img img {
 }
 
 @media only screen and (max-width: 700px) {
+  div.projects-respo1 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
   div.projects-respo {
     width: 49.99999%;
     margin: 6px 0;
@@ -206,54 +142,17 @@ div.projects-img img {
 }
 
 @media only screen and (max-width: 500px) {
+  div.projects-respo1 {
+    width: 100%;
+  }
   div.projects-respo {
     width: 100%;
   }
+  #navbar a {
+    font-size: 10px;
+  }
 }
 
-#qna {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.qaa {
-  padding: 10px;
-  background-color: #071a20;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #071a20;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: center;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-size: 20px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #35393b;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: #071a20;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
@@ -263,10 +162,17 @@ div.projects-img img {
     margin-left: auto;
     margin-right: auto;
   }
+  #ftr{
+    font-size: 15px;
+  }
+  i
+  {
+    font-size:20px;
+  }
 }
 
 i {
-  color: #B66B5B;
+  color: #4c71f2;/*#B66B5B;*/
   margin: 3px;
 }
 
@@ -281,10 +187,3 @@ i {
   display: table;
   clear: both;
 }
-
-
-
-#story {
-  max-width: 100%;
-  height: auto;
-  }
